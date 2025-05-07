@@ -26,16 +26,11 @@ public class Main {
         System.out.println("Минимальная сумма трат за неделю составила " + minPayment + " рублей. " +
                 "Максимальная сумма трат за неделю составила " + maxPayment + " рублей.");
         System.out.println("Задание 3");
-        int weeks = 5;
-        float averageAmount = 0;
-        for (int payment : payments) {
-            sum += payment;
-        }
-        averageAmount = (float) sum / weeks;
-        System.out.println(averageAmount);
+        double averageAmount = (double) sum / payments.length;
+        System.out.println("Средняя сумма трат за месяц составила " + averageAmount + " рублей");
         System.out.println("Задание 4");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+        for (int i = reverseFullName.length-1;i>=0;i--){
             System.out.print(reverseFullName[i]);
         }
     }
